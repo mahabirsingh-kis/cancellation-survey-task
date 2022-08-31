@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.div`
-  height: 100vh;
   width: 100vw;
   background-color: #f9f9f9;
   display: flex;
@@ -66,6 +65,7 @@ export const ConfirmBoxCard = styled.div`
 
         @media (max-width: 768px) {
           font-size: 1rem;
+          line-height: inherit;
         }
 
         &.dark {
@@ -107,5 +107,7 @@ export const ActionButton = styled.a`
     color: #286ef1;
     font-weight: 700;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
   }
 `;
