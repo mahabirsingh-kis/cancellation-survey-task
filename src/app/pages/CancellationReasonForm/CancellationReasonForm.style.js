@@ -144,14 +144,13 @@ export const RadioButtonComponent = styled.div`
   cursor: pointer;
   user-select: none;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 22px 10px;
   display: flex;
   align-items: center;
 
   &.selected-option {
     background-color: #d5e3fe;
-    color: #286ef1;
   }
 
   .radio-outer-circle {
@@ -203,6 +202,7 @@ export const BoxRadioButtonOption = styled.div`
 
   &.selected-option {
     background-color: #d5e3fe;
+    color: #286ef1;
   }
   .helper-text {
     color: #000;
