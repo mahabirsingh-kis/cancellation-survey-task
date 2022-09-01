@@ -6,6 +6,7 @@ const CancellationConfirm = () => {
   return (
     <>
       <MainContainer>
+        <h1 className='page-heading'>My Account</h1>
         <ConfirmBoxCard>
           <div className="card-header">
             <span>x</span>

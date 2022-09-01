@@ -6,17 +6,33 @@ export const MainContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+
+  .page-heading {
+    position: absolute;
+    top: 10px;
+    left: 4%;
+    opacity: 0.2;
+    font-size: 35px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const ConfirmBoxCard = styled.div`
-  width: 50%;
+  width: 55%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: 0.3s;
   border-radius: 12px;
 
   @media (max-width: 768px) {
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 90%;
+    margin-top: 10%;
   }
 
   .card-header {
@@ -27,6 +43,10 @@ export const ConfirmBoxCard = styled.div`
     color: #939191;
     width: 100%;
     margin-bottom-20px;
+
+    span {
+      cursor: pointer;
+    }
   }
 
   .card-body {
@@ -44,20 +64,21 @@ export const ConfirmBoxCard = styled.div`
       padding: 2%;
       @media (max-width: 768px) {
         padding: 2% 5%;
+        width: 100%;
       }
 
       .info-title {
         font-size: 2.3rem;
         font-weight: 700;
         @media (max-width: 768px) {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           font-weight: 700;
         }
       }
 
       .info-description {
         font-size: 1.2rem;
-        line-height: 1;
+        line-height: 1.1;
         display: block;
         margin-bottom: 40px;
         margin-top: 25px;
@@ -79,9 +100,10 @@ export const ConfirmBoxCard = styled.div`
   .card-footer {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 75%;
     margin-bottom: 48px;
     justify-content: space-evenly;
+    margin-left: 13%;
 
     @media (max-width: 768px) {
       flex-direction: column;

@@ -188,6 +188,12 @@ export const RadioButtonComponent = styled.div`
     padding-right: 8px;
     font-weight: 500;
   }
+
+  .product-select {
+    div {
+      height: 55px;
+    }
+  }
 `;
 export const BoxRadioButtonOption = styled.div`
   margin: 24px 0;

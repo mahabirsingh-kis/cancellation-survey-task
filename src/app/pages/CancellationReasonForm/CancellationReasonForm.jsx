@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { MainContainer, ReasonFormCard } from './CancellationReasonForm.style';
 import HeaderComponent from '../../components/HeaderComponent';
 import RadioOption from '../../components/RadioOption';
@@ -8,7 +9,7 @@ import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 
 import ReactSelect, { components } from 'react-select';
 
-const SelectOptions = (props) => {
+const SelectOption = (props) => {
   return (
     <div>
       <components.Option {...props}>
@@ -91,11 +92,13 @@ const CancellationReasonForm = () => {
                         closeMenuOnSelect={false}
                         hideSelectedOptions={false}
                         components={{
-                          SelectOptions,
+                          SelectOption,
                         }}
+                        placeholder="Select Product(s)"
                         onChange={handleProductChange}
                         allowSelectAll={true}
                         value={selectedProduct}
+                        className="product-select"
                       />
                     </div>
                     {selectedProduct && (
